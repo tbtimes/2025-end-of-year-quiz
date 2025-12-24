@@ -444,7 +444,11 @@
 <!-- Q39 -->
 <div class="question" id="question39">
   <p>39. What’s happening in this photo? </p>
-  <img src="photo.JPG" alt="Workers removing art from tree" class="question-image">
+
+   <div class="question-image-container">
+    <img src="photo.JPG" alt="Workers removing art from tree" class="question-image">
+  </div>
+
   <button class="answer" onclick="checkAnswer(this,'A','q39')">A. Workers put up a temporary net around the damaged Trop</button>
   <button class="answer" onclick="checkAnswer(this,'B','q39')">B. Workers remove an art installation</button>
   <button class="answer" onclick="checkAnswer(this,'C','q39')">C. Workers disentangle a commercial fishing net during a park cleanup</button>
@@ -480,10 +484,13 @@
   text-align: left;
   font-style: italic;
 }
-
   .question {
     margin-bottom: 28px;
   }
+
+  .question-image-container {
+  margin: 15px 0; /* space above and below the image */
+}
   .question p {
     font-weight: bold;
     margin-bottom: 10px;
